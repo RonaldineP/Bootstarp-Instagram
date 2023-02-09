@@ -36,11 +36,16 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ...
+                <form>
+                  <div class="form-message">
+                    <label for="message-text" class="col-form-label">Caption:</label>
+                    <textarea class="form-control" id="message-text">Enter your Caption here..</textarea>
+                  </div>
+                </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -54,10 +59,12 @@
             aria-expanded="false">
             <i class="fa fa-cog" aria-hidden="true"></i>
           </button>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Accessibility</a></li>
             <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+            <hr>
+            <li><a class="dropdown-item" href="#">Login</a></li>
           </ul>
         </div>
       </div>
@@ -82,39 +89,39 @@
       <div class="container g-3">
         <div class="row row-cols-3 d-flex justify-content-between g-3">
           <div class="col">
-            <img
+            <img class="grid"
               src="https://assets.airmail.news/static/images/BAh7CEkiCGdpZAY6BkVUSSIzZ2lkOi8vYWlyLW1haWwvQXJ0aWNsZTo6UGhvdG8vMzc0MDk_ZXhwaXJlc19pbgY7AFRJIgxwdXJwb3NlBjsAVEkiDGRlZmF1bHQGOwBUSSIPZXhwaXJlc19hdAY7AFQw--c059faa39679ba881c5d0b5bd9e22f18ad9015a3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2QzNKbGMybDZaVWtpQ1RjMk1ENEdPd1pVT2hCaGRYUnZYMjl5YVdWdWRGUTZESEYxWVd4cGRIbHBWUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--7885319e8d6c8a7a933e903d98fb3884c1f018a9/photo-1608519624.jpeg">
           </div>
           <div class="col">
-            <img
+            <img class="grid"
               src="https://cdn.shopify.com/s/files/1/1374/7295/products/IMG-20201230-WA0020_380x@2x.jpg?v=1611423271">
           </div>
           <div class="col">
-            <img
+            <img class="grid"
               src="https://cdn.shopify.com/s/files/1/1552/7691/products/ARTI_2818_CRMx4__01_760x760.jpg?v=1643929083&width=170&height=170">
           </div>
           <div class="col">
-            <img
+            <img class="grid"
               src="https://images.farmgirlflowers.com/image/upload/f_auto,q_auto,dpr_2.0,h_380,w_380/v1/production/hl3slu3gcso59bjn8n7c">
           </div>
           <div class="col">
-            <img
+            <img class="grid"
               src="https://images.farmgirlflowers.com/image/upload/f_auto,q_auto,dpr_2.0,h_380,w_380/v1/production/vcyoerj4iuccauhfotth">
           </div>
           <div class="col">
-            <img
+            <img class="grid"
               src="https://images.farmgirlflowers.com/image/upload/f_auto,q_auto,dpr_2.0,h_380,w_380/v1/production/kcgoznwi7ce4zwqmijau">
           </div>
           <div class="col">
-            <img
+            <img class="grid"
               src="https://www.backyardgardenlover.com/wp-content/uploads/2022/05/butterfly-on-zinnia-flower.jpg.webp">
           </div>
           <div class="col">
-            <img
+            <img class="grid"
               src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/flower-meanings-1671510935.jpg?crop=0.804xw:1.00xh;0.0994xw,0&resize=640:*">
           </div>
           <div class="col">
-            <img
+            <img class="grid"
               src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-flowers-1659044733.jpeg?crop=0.670xw:1.00xh;0.167xw,0&resize=1200:*">
           </div>
         </div>
@@ -125,82 +132,120 @@
       <div class="container">
         <div class="post">
 
-          <div class="col-sm-10 w-50 mx-auto border border-secondary p-3 mt-3">
-            <div class="post-header d-flex justify-content-between">
-              <h5>Flowers in the city</h5>
+          <div class="col-sm-10 w-50 mx-auto border mt-3">
+            <div class="post-header d-flex justify-content-between p-2">
+              <h4>Flowers in the city</h4>
               <p class="date">12/13</p>
             </div>
-            <img style="width: 100%;"
+            <img class="feed" style="width: 100%; padding-bottom: 10px;"
               src="https://assets.airmail.news/static/images/BAh7CEkiCGdpZAY6BkVUSSIzZ2lkOi8vYWlyLW1haWwvQXJ0aWNsZTo6UGhvdG8vMzc0MDk_ZXhwaXJlc19pbgY7AFRJIgxwdXJwb3NlBjsAVEkiDGRlZmF1bHQGOwBUSSIPZXhwaXJlc19hdAY7AFQw--c059faa39679ba881c5d0b5bd9e22f18ad9015a3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2QzNKbGMybDZaVWtpQ1RjMk1ENEdPd1pVT2hCaGRYUnZYMjl5YVdWdWRGUTZESEYxWVd4cGRIbHBWUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--7885319e8d6c8a7a933e903d98fb3884c1f018a9/photo-1608519624.jpeg" />
-              <div class="post-footer">
-                <p><b>204 likes</b><br>hvjhkjmkvllm=kù</p>
-              </div>
+            <div class="post-footer">
+              <p><b>907 likes</b><br>“The smallest flower is a thought, a life answering to some feature of the Great
+                Whole, <br>of whom they have a persistent intuition.”– Honore de Balzac</p>
+            </div>
           </div>
 
-          <div class="col-sm-10 w-50 mx-auto border-secondary p-3 mt-3">
-            <div class="post-header d-flex justify-content-between">
-              <h5>Sunlights bouquet</h5>
-              <p class="date">12/13</p>
+          <div class="col-sm-10 w-50 mx-auto border mt-3">
+            <div class="post-header d-flex justify-content-between p-2">
+              <h4>Sunlights bouquet</h4>
+              <p class="date">O1/13</p>
             </div>
-            <img style="width: 100%;"
+            <img class="feed" style="width: 100%;"
               src="https://cdn.shopify.com/s/files/1/1374/7295/products/IMG-20201230-WA0020_380x@2x.jpg?v=1611423271">
+            <div class="post-footer">
+              <p><b>834 likes</b><br>“If you tend to a flower, it will bloom, no matter how many weeds surround
+                it.”<br>– Matshona Dhliwayo</p>
+            </div>
           </div>
 
-          <div class="col-sm-10 w-50 mx-auto border-secondary p-3 mt-3">
-            <div class="post-header d-flex justify-content-between">
-              <h5>White garden Bal</h5>
-              <p class="date">12/13</p>
+          <div class="col-sm-10 w-50 mx-auto border mt-3">
+            <div class="post-header d-flex justify-content-between p-2">
+              <h4>White garden Bal</h4>
+              <p class="date">01/05</p>
             </div>
-            <img style="width: 100%;" src="https://cdn.shopify.com/s/files/1/1552/7691/products/ARTI_2818_CRMx4__01_760x760.jpg?v=1643929083&width=170&height=170">
+            <img class="feed" style="width: 100%;"
+              src="https://cdn.shopify.com/s/files/1/1552/7691/products/ARTI_2818_CRMx4__01_760x760.jpg?v=1643929083&width=170&height=170">
+            <div class="post-footer">
+              <p><b>785 likes</b><br>“Flowers are a proud assertion that a ray of beauty out values all the utilities in
+                the world.”<br>– Ralph Waldo Emerson</p>
+            </div>
           </div>
 
-          <div class="col-sm-10 w-50 mx-auto border-secondary p-3 mt-3">
-            <div class="post-header d-flex justify-content-between">
-              <h5>Heart Red roses</h5>
-              <p class="date">12/13</p>
+          <div class="col-sm-10 w-50 mx-auto border mt-3">
+            <div class="post-header d-flex justify-content-between p-2">
+              <h4>Heart Red roses</h4>
+              <p class="date">01/01</p>
             </div>
-            <img src="https://images.farmgirlflowers.com/image/upload/f_auto,q_auto,dpr_2.0,h_380,w_380/v1/production/hl3slu3gcso59bjn8n7c">
+            <img class="feed" style="width: 100%;"
+              src="https://images.farmgirlflowers.com/image/upload/f_auto,q_auto,dpr_2.0,h_380,w_380/v1/production/hl3slu3gcso59bjn8n7c">
+            <div class="post-footer">
+              <p><b>602 likes</b><br>“What a lonely place it would be to have a world without a wildflower!”– Roland R.
+                Kemler</p>
+            </div>
           </div>
 
-          <div class="col-sm-10 w-50 mx-auto">
-            <div class="post-header d-flex justify-content-between">
-              <h5> Flower touch</h5>
-              <p class="date">12/13</p>
+          <div class="col-sm-10 w-50 mx-auto border border-secondary  mt-3">
+            <div class="post-header d-flex justify-content-between p-2">
+              <h4> Flower touch</h4>
+              <p class="date">12/28</p>
             </div>
-            <img style="width: 100%;" src="https://images.farmgirlflowers.com/image/upload/f_auto,q_auto,dpr_2.0,h_380,w_380/v1/production/vcyoerj4iuccauhfotth">
+            <img class="feed" style="width: 100%;"
+              src="https://images.farmgirlflowers.com/image/upload/f_auto,q_auto,dpr_2.0,h_380,w_380/v1/production/vcyoerj4iuccauhfotth">
+            <div class="post-footer">
+              <p><b>853 likes</b><br>“There are always flowers for those who want to see them.”– Henri Matisse</p>
+            </div>
           </div>
 
 
-          <div class="col-sm-10 w-50 mx-auto">
-            <div class="post-header d-flex justify-content-between">
-              <h5> The gift </h5>
-              <p class="date">12/13</p>
+          <div class="col-sm-10 w-50 mx-auto border mt-3">
+            <div class="post-header d-flex justify-content-between p-2">
+              <h4> The gift </h4>
+              <p class="date">12/17</p>
             </div>
-            <img style="width: 100%;" src="https://images.farmgirlflowers.com/image/upload/f_auto,q_auto,dpr_2.0,h_380,w_380/v1/production/kcgoznwi7ce4zwqmijau">
+            <img class="feed" style="width: 100%;"
+              src="https://loveflowersmiami.com/wp-content/uploads/2022/04/Luxurious-Flower-100-Red-Roses-Bouquet-1024x1024.jpg">
+            <div class="post-footer">
+              <p><b>949 likes</b><br>“A flower cannot blossom without sunshine, and a man cannot live without
+                love.”<br>- Max Muller</p>
+            </div>
           </div>
 
-          <div class="col-sm-10 w-50 mx-auto">
-            <div class="post-header d-flex justify-content-between">
-              <h5> Butterfly on zinnia</h5>
+          <div class="col-sm-10 w-50 mx-auto border mt-3">
+            <div class="post-header d-flex justify-content-between p-2">
+              <h4> Butterfly on zinnia</h4>
               <p class="date">12/13</p>
             </div>
-            <img style="width: 100%;" src="https://www.backyardgardenlover.com/wp-content/uploads/2022/05/butterfly-on-zinnia-flower.jpg.webp">
+            <img class="feed" style="width: 100%;"
+              src="https://www.backyardgardenlover.com/wp-content/uploads/2022/05/butterfly-on-zinnia-flower.jpg.webp">
+            <div class="post-footer">
+              <p><b>879 likes</b><br>“Love is like wildflowers; it’s often found in the most unlikely places.”<br>–
+                Ralph Waldo Emerson</p>
+            </div>
           </div>
 
-          <div class="col-sm-10 w-50 mx-auto">
-            <div class="post-header d-flex justify-content-between">
-              <h5> Flowery table</h5>
-              <p class="date">12/13</p>
+          <div class="col-sm-10 w-50 mx-auto border mt-3">
+            <div class="post-header d-flex justify-content-between p-2">
+              <h4> Flowery table</h4>
+              <p class="date">12/04</p>
             </div>
-            <img style="width: 100%;" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/flower-meanings-1671510935.jpg?crop=0.804xw:1.00xh;0.0994xw,0&resize=640:*">
+            <img class="feed" style="width: 100%;"
+              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/flower-meanings-1671510935.jpg?crop=0.804xw:1.00xh;0.0994xw,0&resize=640:*">
+            <div class="post-footer">
+              <p><b>954 likes</b><br>“If you look the right way, you can see that the whole world is a garden.”<br>–
+                Frances Hodgson Burnett</p>
+            </div>
           </div>
 
-          <div class="col-sm-10 w-50 mx-auto">
-            <div class="post-header d-flex justify-content-between">
-              <h5>The poppy path</h5>
-              <p class="date">12/13</p>
+          <div class="col-sm-10 w-50 mx-auto border mb-3 mt-3">
+            <div class="post-header d-flex justify-content-between p-2">
+              <h4>The poppy path</h4>
+              <p class="date">12/01</p>
             </div>
-            <img style="width: 100%;" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-flowers-1659044733.jpeg?crop=0.670xw:1.00xh;0.167xw,0&resize=1200:*">
+            <img class="feed" style="width: 100%;"
+              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-flowers-1659044733.jpeg?crop=0.670xw:1.00xh;0.167xw,0&resize=1200:*">
+            <div class="post-footer">
+              <p><b>699 likes</b><br>“Happiness held is the seed; Happiness shared is the flower.”– John Harrigan</p>
+            </div>
           </div>
 
 
